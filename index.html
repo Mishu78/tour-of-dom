@@ -11,6 +11,10 @@
         .food .deshi{
             font-weight: 700;
         }
+        #food-title{
+            color:red;
+            background
+        }
     </style>
     <link rel="stylesheet" href="./style/style.css">
 </head>
@@ -19,12 +23,12 @@
         <h2>This is header section</h2> 
     </header>
     <main>
-       <section id="old-dhaka" class="'songs">
+       <section id="old-dhaka" class="songs">
          <ul>
             <li>jalaliset</li>
             <li>bonobash</li>
             <li>shafayet</li>
-            <li>Dom de</li>
+           <li>Dom de</li>
         </ul>
         <p>Lorem ipsum dolor,<span>oli8 goli</span> sit amet consectetur adipisicing elit. Tenetur ullam eveniet laudantium vel consequuntur laborum magni debitis delectus recusandae incidunt esse repellat quo labore perferendis tempora, deleniti nemo. Deleniti, obcaecati?
         Quo vero ratione architecto cupiditate accusamus nostrum <span> odit </span>quam delectus fugiat ipsam eos reiciendis, tempora explicabo nam earum dolores animi nisi tempore ad ipsa sequi praesentium culpa illum? Laborum, temporibus?</p>
@@ -64,7 +68,7 @@
         console.log(li.innerText);
      }
      //all h1 tags
-     const allHeadings=document.getElementsByTagName("h1");
+     const allHeadings=document.getElementsByTagName("h2");
      for(const heading of allHeadings)   {
         console.log(heading.innerText);
      }
@@ -81,9 +85,12 @@
      //get by class
 
      const bandItem=document.getElementsByClassName("deshi");
-     console.log(bandItem.innerText);
+     for(const item of bandItem){
+     console.log(item.innerText);
      bandItem.innerText="foreign";
-      console.log(bandItem.innerText);
+     console.log(item.innerText);
+     }
+    
      //all p tags
     const allParagraph = document.getElementsByTagName("p");
     for(const paragraph of allParagraph){
@@ -96,6 +103,7 @@
     for(const span of spanElements){
  console.log(span.innerText);
     }
+
     </script>
     <script src="./js/hello.js"></script>
 </body>
