@@ -8,6 +8,9 @@
         h2{
             color:aqua;
         }
+        .food .deshi{
+            font-weight: 700;
+        }
     </style>
     <link rel="stylesheet" href="./style/style.css">
 </head>
@@ -16,17 +19,32 @@
         <h2>This is header section</h2> 
     </header>
     <main>
-        <ul>
+       <section id="old-dhaka" class="'songs">
+         <ul>
             <li>jalaliset</li>
             <li>bonobash</li>
             <li>shafayet</li>
             <li>Dom de</li>
         </ul>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur ullam eveniet laudantium vel consequuntur laborum magni debitis delectus recusandae incidunt esse repellat quo labore perferendis tempora, deleniti nemo. Deleniti, obcaecati?
-        Quo vero ratione architecto cupiditate accusamus nostrum odit quam delectus fugiat ipsam eos reiciendis, tempora explicabo nam earum dolores animi nisi tempore ad ipsa sequi praesentium culpa illum? Laborum, temporibus?</p>
-
+        <p>Lorem ipsum dolor,<span>oli8 goli</span> sit amet consectetur adipisicing elit. Tenetur ullam eveniet laudantium vel consequuntur laborum magni debitis delectus recusandae incidunt esse repellat quo labore perferendis tempora, deleniti nemo. Deleniti, obcaecati?
+        Quo vero ratione architecto cupiditate accusamus nostrum <span> odit </span>quam delectus fugiat ipsam eos reiciendis, tempora explicabo nam earum dolores animi nisi tempore ad ipsa sequi praesentium culpa illum? Laborum, temporibus?</p>
+       
+        <h2>asdf asdf <span>some text</span></h2>
          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur ullam eveniet laudantium vel consequuntur laborum magni debitis delectus recusandae incidunt esse repellat quo labore perferendis tempora, deleniti nemo. Deleniti, obcaecati?
         Quo vero ratione architecto cupiditate accusamus nostrum odit quam delectus fugiat ipsam eos reiciendis, tempora explicabo nam earum dolores animi nisi tempore ad ipsa sequi praesentium culpa illum? Laborum, temporibus?</p>
+       </section>
+       <section class="food">
+        <h2 id="food-title">Food I like</h2>
+        <ul>
+            <li class="deshi" >Rice</li>
+            <li class="deshi">Lentils</li>
+            <li class="deshi">Pizza</li>
+            <li>Burger</li>
+            <li id="foods">sandwich</li>
+            <li>Noodels</li>
+            <li>Chocolate</li>
+        </ul>
+       </section>
     </main>
     <footer></footer>
     <script>
@@ -50,11 +68,33 @@
      for(const heading of allHeadings)   {
         console.log(heading.innerText);
      }
+
+     //get by id
+     const foodTitleH1= document.getElementById('food-title');
+     console.log(foodTitleH1.innerText);
+     foodTitleH1.innerText="foods that makes me healthy";
+     console.log(foodTitleH1.innerText);
      
+     const foodTitleLi= document.getElementById("foods");
+     console.log(foodTitleLi.innerText);
+
+     //get by class
+
+     const bandItem=document.getElementsByClassName("deshi");
+     console.log(bandItem.innerText);
+     bandItem.innerText="foreign";
+      console.log(bandItem.innerText);
      //all p tags
     const allParagraph = document.getElementsByTagName("p");
     for(const paragraph of allParagraph){
         console.log(paragraph.innerText);
+    }
+    //queryselectorall will give all elements as nodelist but queryselector will give first element he got
+
+    const spanElements=document.querySelectorAll("#old-dhaka p span");
+   
+    for(const span of spanElements){
+ console.log(span.innerText);
     }
     </script>
     <script src="./js/hello.js"></script>
