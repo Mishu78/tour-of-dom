@@ -27,3 +27,14 @@ placeSection.appendChild(ul);
 mainContainer.appendChild(placeSection);
 
 
+//easier to create HTML
+const bookSection=document.createElement('section');
+bookSection.innerHTML=`
+<h1>I want to read books</h1>
+<ul>
+<li>physics</li>
+<li>chemistry</li>
+<li>Biology</li>
+</ul> 
+`
+mainContainer.appendChild(bookSection);
