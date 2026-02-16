@@ -35,6 +35,7 @@ bookSection.innerHTML=`
 <li>physics</li>
 <li>chemistry</li>
 <li>Biology</li>
+<li>math</li>
 </ul> 
 `
 mainContainer.appendChild(bookSection);
