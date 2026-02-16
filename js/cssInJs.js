@@ -3,7 +3,7 @@ const sections=document.querySelectorAll('section');
 //console.log(sections);
 //inline-css class
 for(const section of sections){
-    console.log(section);
+    //console.log(section);
     section.style.backgroundColor='lightBlue';
     section.style.border='3px solid green';
     section.style.marginBottom='20px';
