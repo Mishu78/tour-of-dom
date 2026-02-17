@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story post</title>
+</head>
+<body>
+    <section id="story-container">
+        <h2>Post your story</h2>
+        <textarea name="story-box" id="story-box" cols="50" rows="10"></textarea>
+        <br>
+        <button id="post-btn">Post your story here</button>
+    </section>
+    <script>
+       document.getElementById('post-btn').addEventListener('click',function(){
+       const storyBox= document.getElementById('story-box');
+       const newPost=storyBox.value;
+       const storyContainer=document.getElementById('story-container');
+       const newParagraph=document.createElement('p');
+       newParagraph.innerText=newPost;
+       storyContainer.appendChild(newParagraph);
+       storyBox.value="";
+       })
+    </script>
+</body>
+</html>
