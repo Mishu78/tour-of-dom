@@ -27,9 +27,9 @@
 </head>
 <body>
     <h1>Explore Event bubble</h1>
-    <section>
+    <section id="list-container">
         <h3>List of things</h3>
-        <ol>
+        <ol id="item-list">
             <li id="item-1">Lorem, ipsum.</li>
             <li id="item-2">Minus, quisquam!</li>
             <li id="item-3">Natus, est.</li>
@@ -39,8 +39,13 @@
         </ol>
     </section>
     <script>
+        //list item-2 click handler
         document.getElementById('item-2').addEventListener('click',function(){
             console.log("item-2 clicked");
+        })
+        //ol click handler
+        document.getElementById('item-list').addEventListener('click',function(){
+            console.log("item clicked");
         })
     </script>
 </body>
