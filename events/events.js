@@ -8,7 +8,7 @@
     //onclick by id option 3
     const btnMakeBlue= document.getElementById('btn-make-blue');
        //console.log(btnMakeBlue);
-       btnMakeBlue.onclick = function makeBlue(){
+       btnMakeBlue.onclick = function(){
         document.body.style.backgroundColor='blue';
        }
 //option 4

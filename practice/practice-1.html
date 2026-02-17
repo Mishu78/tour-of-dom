@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice-1</title>
+</head>
+<body>
+<button onclick="makeOrange()">Make orange</button>
+<button id="makePink">Make Pink</button>
+<button id="makePurple">make purple</button>
+<script>
+    function makeOrange(){
+        document.body.style.backgroundColor="orange";
+    }
+   const makePink= document.getElementById("makePink");
+   makePink.onclick=function(){
+   document.body.style.backgroundColor="pink";
+   }
+
+   const makePurple=document.getElementById("makePurple");
+   makePurple.onclick=makePurpleColor;
+   function makePurpleColor(){
+    document.body.style.backgroundColor="purple";
+   }
+</script>
+</body>
+</html>
