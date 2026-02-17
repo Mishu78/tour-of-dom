@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment box</title>
+    <style>
+        .comment{
+            background-color: aqua;
+            border:2px solid black;
+            border-radius: 15px;
+            margin: 15px;
+            padding:20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>My awesome comment box.write what in your mind!!!</h1>
+    <section>
+        <h3>All comments here</h3>
+        <div>
+            <p class="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis enim qui fuga hic velit, adipisci praesentium esse nobis perferendis soluta recusandae, maxime quasi voluptatum non. Architecto facere dolores neque aperiam.</p>
+            <p class="comment">Obcaecati sunt assumenda possimus at repellendus necessitatibus eveniet voluptates distinctio. Mollitia aspernatur non vero, molestias in impedit velit, minima tenetur adipisci esse consequatur cupiditate, quo optio ratione provident laborum! Minima.</p>
+            <p class="comment">Debitis tempore esse sunt totam minima beatae unde nesciunt porro molestias earum deleniti quisquam ipsa cum magni, ab dolor aspernatur amet. Ut necessitatibus repudiandae suscipit voluptates eaque aliquid corporis accusantium.</p>
+        </div>
+        <form action="">
+            <textarea name="post-comment" id="post-comment" cols="60" rows="5"></textarea>
+            <br>
+            <button type="button" id="btn-post-comment">post comment</button>
+        </form>
+    </section>
+    <script>
+        //step-1: set an event handler to the button
+        document.getElementById('btn-post-comment').addEventListener("click",function(){
+            document.body.style.backgroundColor="red";
+            //step-2:get the text written in the comment text area
+        })
+    </script>
+</body>
+</html>
